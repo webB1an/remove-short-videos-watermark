@@ -188,7 +188,7 @@ def sanitize_filename(name: str, fallback: str) -> str:
     name = re.sub(r"\s+", " ", name).strip(" .")
     if not name:
         name = fallback
-    return name[:90]
+    return name[:60]
 
 
 def download_video(
